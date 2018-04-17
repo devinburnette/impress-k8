@@ -5,3 +5,6 @@
 
 # Files for editors and other tools
 /.brackets.json
+
+*.swo
+*.swp

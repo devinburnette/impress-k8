@@ -4,7 +4,7 @@
 
     You couldn't find a better place to find out!
 
-    Welcome to the stylesheet impress.js demo presentation.
+2   Welcome to the stylesheet impress.js demo presentation.
 
     Please remember that it is not meant to be a part of impress.js and is
     not required by impress.js.
@@ -249,6 +249,12 @@ a:focus {
     First is the title step with a big <h1> (no room for padding) and some
     3D positioning along Z axis.
 */
+
+.title {
+    text-align: center;
+    padding: 0;
+    font-size: 146px;
+}
 
 #title {
     padding: 0;
