@@ -319,18 +319,43 @@
     </div>
 
     <div class="step slide" data-x="0" data-y="7500">
-        <strong>Jobs</strong> <br/>
+        <strong>Services</strong> <br/>
+        <q>A service makes a pod or group of pods accessible by exposing ports (internally or externally).</q>
     </div>
 
     <div class="step slide" data-x="1000" data-y="7500">
-        <strong>Cron Jobs</strong> <br/>
+        <strong>Services</strong> <br/>
+        <pre>
+          <code style="font-size: 18px;">
+            apiVersion: v1
+            kind: Service
+            metadata:
+              name: impress-service
+            spec:
+              type: LoadBalancer
+              selector:
+                app: impress
+              ports:
+              - protocol: TCP
+                port: 8000
+                targetPort: 80
+          </code>
+        </pre>
     </div>
 
     <div class="step slide" data-x="2000" data-y="7500">
-        <strong>Stateful Sets</strong> <br/>
+        <strong>Jobs</strong> <br/>
     </div>
 
     <div class="step slide" data-x="3000" data-y="7500">
+        <strong>Cron Jobs</strong> <br/>
+    </div>
+
+    <div class="step slide" data-x="4000" data-y="7500">
+        <strong>Stateful Sets</strong> <br/>
+    </div>
+
+    <div class="step slide" data-x="5000" data-y="7500">
         <strong>Daemon Sets</strong> <br/>
     </div>
 
